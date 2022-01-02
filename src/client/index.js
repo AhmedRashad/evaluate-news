@@ -1,5 +1,5 @@
-import { checkURL } from './js/checkUrl'
-
+import { urlPattern } from './js/urlPattern'
+import { updateUI } from "./js/updateUI";
 import { handleSubmit } from './js/formHandler'
 
 import './styles/resets.scss'
@@ -12,6 +12,7 @@ import './styles/header.scss'
 
 
 export {
-    checkURL,
-    handleSubmit
+    urlPattern,
+    handleSubmit,
+    updateUI
    }

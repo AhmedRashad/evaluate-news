@@ -1,8 +1,8 @@
-import { checkURL } from "../src/client/js/checkUrl"
+import { urlPattern } from "../src/client/js/urlPattern"
 
 describe("Testing the submit functionality", () => {
 
-    test("Testing the checkURL() function", () => {
+    test("Testing the urlPattern() function", () => {
           
-           expect(checkURL).toBeDefined();
+           expect(urlPattern).toBeDefined();
 })});

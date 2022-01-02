@@ -46,7 +46,6 @@ app.get('/test', function (req, res) {
 app.post('/api', async function(req, res) {
     console.log(res);
     userLink = req.body.url;
-    console.log(userLink);
     console.log(`You entered: ${userLink}`);
     const apiURL = `${baseURL}key=${apiKey}&url=${userLink}&lang=en`
 console.log('api call',apiURL);
