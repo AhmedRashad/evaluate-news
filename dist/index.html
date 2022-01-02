@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <script src="https://kit.fontawesome.com/9d0dd18fe3.js" crossorigin="anonymous"></script>        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+
+        <header>
+            <div >
+                
+                <i class="fas fa-dragon" ></i>
+            </div>
+            <div class="">
+                Evaluate News
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="form">
+                <p class="input-url">Enter a URL of an article / a blog to discover its sentiment.</p>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="Enter URL here">
+                    <input class="bottem" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section class="result">
+                <strong >Form Results:</strong>
+                <div class="contant">
+                    <div class="data" id="polarity"></div>
+                    <div class="data" id="agreement"></div>
+                    <div class="data" id="subjectivity"></div>
+                    <div class="data" id="confidence"></div>
+                    <div class="data" id="irony"></div>
+                </div>
+               
+            </section>
+          </main>
+
+        <footer>
+            <div class="created">
+                Evaluate News is created by Ahmed Rashad
+            </div>
+            <div class="footer">
+                
+                CONTACT
+                <div class="icon">
+                    <a href="ahmedrabie441@gmail.com" target="blank">
+                        <i class="fab fa-google"></i>
+                    </a>
+                   
+                </div>
+                
+                
+            </div>
+            <dev class="footer">
+                FOLLOW
+                <div class="icon">
+                    <a href="https://twitter.com/ahmedrabie441" target="blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                   
+                </div>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100007897515175" target="blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                </div>
+                <div class="icon">
+                    <a href="www.linkedin.com/in/ahmed-rashad-160671100" target="blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/AhmedRashad" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    
+                </div>
+            </dev>
+        </footer>
+       
+        <script>
+            if ('serviceWorker' in navigator) {
+
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    <script type="text/javascript" src="main.js"></script></body>
+</html>
